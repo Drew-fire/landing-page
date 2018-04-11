@@ -1,0 +1,174 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.section_main {
+	padding-top: 64px;
+	background: #eff0f2;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+	margin-right: calc(100% - 148px);
+}
+
+.main_title {
+	text-align: center;
+	color: #505050;
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 58px;
+	letter-spacing: 2.3px;
+	text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+	margin-top: 190.8px;
+	margin-bottom: 137px;
+}
+
+.main_title::after {
+	position: absolute;
+	content: url(../img/juice.png);
+	transform: translate(-85px, 224px);
+}
+
+.main_title span {
+	background: rgba(118, 244, 234, 0.5);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btn_first {
+	color: rgba(0,0,0,0.6);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	border-radius: 2px;
+	border: 2px solid rgba(0,0,0,0.5);
+	display: block;
+	margin: 0 auto;
+	width: 232px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.btn_first:hover {
+	background: rgba(118, 244, 234, 0.5);
+	border: 2px solid rgba(0,0,0,0.0);
+	color: rgba(0,0,0,0.5);
+}
+
+.btn_first:active {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.1) inset;
+}
+
+.section_about {
+	padding-top: 129px;
+	background: #f8fafa;
+	padding-bottom: 110px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 38px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 28px;
+	letter-spacing: 2.28px;
+	margin: 0;
+}
+
+.about__title_text {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1.08px;
+	text-align: center;
+	color: rgba(0,0,0,0.62);
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 138px;
+}
+
+.about__img {
+	margin-left: 40px;
+	text-align: center;
+	display: inline-block;
+	max-width: 479px;
+	width: 100%;
+	width: 49%;
+}
+
+.checkbox {
+	margin-top: 43px;
+
+}
+
+.images {
+	background: url(../img/bg.png) no-repeat center center;
+}
+
+.images img {
+	box-shadow:2px 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.content_about {
+	color: rgba(0,0,0,0.7);
+	vertical-align: top;
+	width: 45%;
+	display: inline-block;
+	text-align: justify;
+	padding-left: 68px;
+}
+
+
+.content__title {
+	font-family: 'Merriweather', serif;
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+
+.content__text {
+	font-family: 'Raleway', sans-serif;
+	max-width: 474px;
+	width: 100%;
+	font-style: 16px;
+	line-height: 28px;
+	margin-bottom: 38px;
+}
+
+.content__title_second {
+	font-size: 17px;
+}
+
+[type="radio"] {
+	display: none;
+}
+
+label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 3px;
+	background-color: #d0d0d0;
+}
+
+[type="radio"]:checked+label {
+	border-radius: 3px;
+	background-color: #71f6eb;
+	transition: all 0.3s ease;
+}

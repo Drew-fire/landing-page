@@ -81,6 +81,7 @@ body {
 }
 
 h2 {
+	color: rgba(0,0,0,0.9);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 38px;
 	font-weight: 700;
@@ -91,7 +92,7 @@ h2 {
 	margin: 0;
 }
 
-.about__title_text {
+.about_title_text {
 	font-family: 'Merriweather', serif;
 	letter-spacing: 1.08px;
 	text-align: center;
@@ -171,4 +172,392 @@ label {
 	border-radius: 3px;
 	background-color: #71f6eb;
 	transition: all 0.3s ease;
+}
+
+.section_works {
+	background: #fff;
+	padding-top: 129px;
+	padding-bottom: 120px;
+}
+
+.work__img img {
+	width: calc((100% - 30px) / 3);
+}
+
+.work__img img:nth-child(3n+2) {
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+.work__img img:nth-child(-n+3) {
+	margin-bottom: 11px;
+}
+
+/*------------------------------------------------*/
+
+
+.section_services {
+	background: #f9fbfb;
+	padding-top: 129px;
+	padding-bottom: 125px;
+}
+
+.services__title_text {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1.08px;
+	text-align: center;
+	color: rgba(0,0,0,0.62);
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 123px;
+}
+
+.examples h3 {
+	margin: 0;
+}
+
+.overlay_tea_text
+	{
+		margin: 0;
+	}
+
+	/*-------------img_tea-----------------*/
+
+.examples img {
+	width: 100%;
+}
+
+.img_tea {
+	width: calc((100% - 488px) * 1);
+	margin-right: 10px;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.overlay_tea {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(109, 246, 235, 0.97);
+	transition: all ease 0.3s;
+	opacity: 0;
+	padding: 63px 120px 0px 66px;
+}
+
+.img_tea:hover .overlay_tea {
+	opacity: 1;
+}
+
+.overlay_tea_title {
+	color: rgba(0,0,0, 0.83);
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1.2px;
+}
+
+.overlay_tea_text {
+	margin-top: 32px;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	color: rgba(0,0,0, 0.75);
+	letter-spacing: 0.4px;
+	line-height: 28px;
+}
+
+.overlay_cross a {
+	text-decoration: none;
+	color: rgba(0,0,0, 0.4);
+	font-size: 25px;
+	position: relative;
+	top: 56px;
+	left: 0px;
+}
+
+.overlay_cross a:hover {
+	color: rgba(0,0,0, 0.9);
+}
+
+/*-------------------img_documents--------------*/
+
+.img_documents {
+	position: relative;
+	width: calc((100% - 666px) * 1);
+	display: inline-block;
+}
+
+.overlay_documents {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(0,0,0, 0.6);
+	transition: all ease 0.3s;
+	opacity: 0;
+}
+
+.img_documents:hover .overlay_documents {
+	opacity: 1;
+}
+
+.overlay_title {
+	color: rgba(255,255, 255, 0.95);
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1px;
+}
+
+.overlay_text {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	color: rgba(255,255, 255, 0.9);
+	letter-spacing: 0.32px;
+	line-height: 28px;
+	margin-bottom: 46px;
+}
+
+.wrap_overlay {
+	position: absolute;
+	bottom: 55px;
+	padding-right: 95px;
+	padding-left: 68px;
+}
+
+.overlay_button a {
+	color: rgba(249, 251, 251, 0.8);
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.72px;
+}
+
+.overlay_button a:hover {
+	color: rgba(109, 246, 235, 0.8);
+}
+
+/*-------------------------Laptop----------------------*/
+
+.img_laptop {
+	position: relative;
+	width: calc((100% - 488px) * 1);
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.overlay_laptop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(0,0,0, 0.65);
+	transition: all ease 0.3s;
+	opacity: 0;
+}
+
+
+.img_laptop:hover .overlay_laptop {
+	opacity: 1;
+}
+
+
+/*------------------------img_chair------------------------*/
+
+
+.img_chair {
+	position: relative;
+	width: calc((100% - 666px) * 1);
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.overlay_chair {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(0,0,0, 0.6);
+	transition: all ease 0.3s;
+	opacity: 0;
+}
+
+.img_chair:hover .overlay_chair {
+	opacity: 1;
+}
+
+/*------------------------------img_bottle-----------------------*/
+
+
+.img_bottle {
+	position: relative;
+	width: calc((100% - 666px) * 1);
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.overlay_bottle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(0,0,0, 0.65);
+	transition: all ease 0.3s;
+	opacity: 0;
+}
+
+.img_bottle:hover .overlay_bottle {
+	opacity: 1;
+}
+
+/*------------------------------img_cups------------------------*/
+
+
+.img_cups {
+	position: relative;
+	width: calc((100% - 488px) * 1);
+	display: inline-block;
+}
+
+.overlay_cups {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 4px);
+	background: rgba(0,0,0, 0.65);
+	transition: all ease 0.3s;
+	opacity: 0;
+}
+
+.img_cups:hover .overlay_cups {
+	opacity: 1;
+}
+
+/*---------------------section_team------------------*/
+
+
+.section_team {
+	padding-top: 122px;
+	padding-bottom: 118px;
+}
+
+.team_title_text {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1.08px;
+	text-align: center;
+	color: rgba(0,0,0,0.62);
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 123px;
+}
+
+.img_team {
+	position: relative;
+	display: inline-block;
+}
+
+.img_team:hover .overlay_team {
+	opacity: 1;
+}
+
+.overlay_team {
+	position: absolute;
+	top: 180px;
+	left: 18px;
+	width: 335px;
+	height: 245px;
+	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
+	border-radius: 2px;
+	background: rgba(109, 246, 235, 0.98);
+	transition: all ease 0.3s;
+	opacity: 0;
+	padding: 13px 50px 34px 38px;
+}
+
+.overlay_team:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 40px solid rgba(109, 246, 235, 0.98);
+	position: relative;
+	top: -55px;
+	left: -30px;
+}
+
+.name_human {
+	color: rgba(0,0,0, 0.8);
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+
+}
+
+.name_human span {
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	font-weight: 500;
+	font-style: italic;
+	text-transform: none;
+	letter-spacing: 0.45px;
+	color: rgba(118, 112, 112, 0.95);
+}
+
+.team_comment {
+	margin-top: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.16px;
+	color: rgba(0,0,0, 0.8);
+	line-height: 24px;
+}
+
+.social_block {
+	position: absolute;
+	bottom: 28px;
+	left: 30px;
+}
+
+.social_button {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align:center;
+	line-height: 25px;
+	border-radius: 50%;
+	transition: all ease 0.35s;
+}
+
+.social_button:hover {
+	background: rgba(255,255,255, 0.8);
+}
+
+.img_team {
+	width: calc((100% - 30px) / 3);
+}
+
+.img_team:nth-child(3n+2) {
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+.img_team:nth-child(-n+3) {
+	margin-bottom: 11px;
+}
+
+.img_team_human {
+	width: 100%;
 }

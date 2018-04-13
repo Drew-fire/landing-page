@@ -562,3 +562,67 @@ label {
 .img_team_human {
 	width: 100%;
 }
+
+/*---------------------section_what--------------*/
+
+
+.section_what {
+	padding-top: 121px;
+	padding-bottom: 141px;
+}
+
+.what_title_text {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1.08px;
+	text-align: center;
+	color: rgba(0,0,0,0.62);
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 161px;
+}
+
+.images_what {
+	width: 393px;
+	height: 362px;
+	background: #ecedef;
+	border-radius: 3px;
+	position: relative;
+}
+
+.what_img {
+	width: 100%;
+	max-width: 393px;
+	text-align: center;
+}
+
+.images_what img {
+	position: absolute;
+	top: -38px;
+	left: 18px;
+}
+
+.checkbox_what {
+	margin: 75px;
+}
+
+.right_content {
+	display: inline-block;
+	max-width: 666px;
+	width: 100%;
+}
+
+.what_title {
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	color: rgba(0,0,0, 0.85);
+}
+
+.what_title span {
+	color: rgba(120, 120, 120, 0.95);
+	font-size: 15px;
+	font-style: italic;
+}
+
+.what_content {
+	display: inline-block;
+}

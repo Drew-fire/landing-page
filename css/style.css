@@ -844,6 +844,7 @@ form {
 .map iframe {
 	width: 100%;
 	height: 224px;
+<<<<<<< HEAD
 }
 
 /*----------------------------footer-----------------*/
@@ -900,4 +901,6 @@ footer {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0.16px;
 	margin: 0;
+=======
+>>>>>>> fc34fed799eef216dba349f9135397244403252f
 }

@@ -1,0 +1,66 @@
+
+.navigation {
+	letter-spacing: 1.2px;
+	position: absolute;
+	height: 100vh;
+	width: 400px;
+	min-height: 740px;
+	background: rgba(0,0,0, 0.7);
+	top: -16px;
+	right: -400px;
+	z-index: 3;
+	opacity: 0;
+	transition: all 0.4s ease;
+	list-style: none;
+	padding-top: 40px;
+	text-transform: uppercase;
+}
+
+.nav-trigger {
+	 position: absolute;
+	 clip: rect(0, 0, 0, 0);
+}
+
+.nav-item {
+	width: 80%;
+	padding: 25px 15px;
+	border-bottom: 1px solid rgba(255,255,255, 0.4);
+	transition: all 0.3s ease;
+}
+
+
+.nav-item a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+	color: #76f4ea;
+}
+.checkbox_svg {
+	position: absolute;
+	width: 30px;
+	height: 21px;
+	background: url(../img/burger.png);
+}
+
+.checkbox_svg {
+	 position: absolute;
+	 top: 89px;
+	 right: 191px;
+	 z-index: 4;
+	 cursor: pointer;
+	 transition: all 0.4s ease;
+}
+
+.nav-trigger:checked + label {
+ 	right: 400px;
+}
+
+.nav-trigger:checked ~ ul {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+	opacity: 1;
+	right: -30px;
+}

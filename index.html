@@ -11,19 +11,45 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:700|Montserrat:400,700|Raleway:400,500" rel="stylesheet">
 		<!-- Стили -->
+	<link rel="stylesheet" href="css/burger.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+
 </head>
 <body>
 	<div class="section_main">
 		<div class="container">
 			<header>
+				<nav>
+				<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+				<label class="checkbox_svg " for="nav-trigger"></label>
 				<img src="img/logo.png" alt="Shopno" class="logo">
-				<a class="burger" href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="21" viewBox="0 0 30 21">
-					  <image id="burger.svg" width="30" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAVCAQAAAD7/pbqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBAgPOhHjKSewAAAATklEQVQ4y+3SuRGAQAxD0WeOQiiGnO4oZltbBmpYOyAA5X8kjRQOu8W4uhZOUwKFngXBbLWlvC+tYizuAlzqXIJrnf+TjOm9k9Rif3DnB2HuE2sbCiIgAAAAAElFTkSuQmCC"/>
-					</svg>
-				</a>
+				
+					<ul class="navigation">
+						<li class="nav-item">
+							<a href="#about_us" class="scrollto">ABOUT US</a>	
+						</li>
+						<li class="nav-item">
+							<a href="#featured_works" class="scrollto">Featured works</a>			
+						</li>
+						<li class="nav-item">
+							<a href="#our_services" class="scrollto">Our services</a>		
+						</li>
+						<li class="nav-item">
+							<a href="#small_team" class="scrollto">SMALL TEAM</a>				
+						</li>
+						<li class="nav-item">
+							<a href="#what_says" class="scrollto">WHAT THEY SAYS</a>				
+						</li>
+						<li class="nav-item">
+							<a href="#partners" class="scrollto">Partners</a>				
+						</li>
+						<li class="nav-item">
+							<a href="#follow_us" class="scrollto">FOLLOW US</a>				
+						</li>
+
+					</ul>
+				</nav>
 			</header>
 			<div class="title_block">
 				<h1 class="main_title">
@@ -31,12 +57,12 @@
 					<br><span>Agency</span>CORPORATE SHOPNO Theme
 				</h1>
 			</div>
-			<a class="btn_first" href="#">Contact us</a>
+			<a class="btn_first scrollto" href="#form">Contact us</a>
 		</div>
 	</div>
-	<div class="section_about">
+	<div class="section_about site-wrap">
 		<div class="container">
-			<h2>
+			<h2 id="about_us">
 				ABOUT US
 			</h2>
 			<p class="about_title_text">
@@ -83,10 +109,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="section_works">
+	<div class="section_works site-wrap">
 		<div class="container">
-			<h2 class="works_title">
-				featured works
+			<h2 class="works_title" id="featured_works">
+				Featured works
 			</h2>
 			<p class="about_title_text">
 				Lorem ipsum dolor sit amet event landing template
@@ -103,7 +129,7 @@
 	</div>
 	<div class="section_services">
 		<div class="container">
-			<h2>
+			<h2 id="our_services">
 				Our services
 			</h2>
 			<p class="services__title_text">
@@ -209,7 +235,7 @@
 	</div>
 	<div class="section_team">
 		<div class="container">
-			<h2>
+			<h2 id="small_team">
 				Small team
 			</h2>
 			<p class="team_title_text">
@@ -371,7 +397,7 @@
 </div>
 <div class="section_what">
 	<div class="container">
-		<h2>
+		<h2 id="what_says">
 			What they says
 		</h2>
 		<p class="what_title_text">
@@ -380,18 +406,22 @@
 		<div class="slider">
 			<div class="left_content">
 				<div class="images_what">
-					<img src="img/what_img.png" alt="what">
+
+					<input class="img_check img_check1" checked="checked" type="radio" name="check_s" id="radio5">
+					<label class="label label_f" for="radio5"></label>
+					<input class="img_check img_check2" type="radio" name="check_s" id="radio6">
+					<label class="label label_s" for="radio6"></label>
+					<input class="img_check img_check3" type="radio" name="check_s" id="radio7">
+					<label  class="label label_t" for="radio7"></label>
+					<input class="img_check img_check4" type="radio" name="check_s" id="radio8">
+					<label  class="label label_four" for="radio8"></label>
+					<img class="common_img_f common_img" src="img/team_img3.png" alt="what">
+					<img class="common_img_s common_img" src="img/team_img5.png" alt="what">
+					<img class="common_img_t common_img" src="img/team_img4.png" alt="what">
+					<img class="common_img_four common_img" src="img/team_img2.png" alt="what">
+
 				</div>
-					<div class="checkbox_what">
-						<input type="radio" name="check" id="radio5">
-						<label class="label" for="radio5"></label>
-						<input checked="checked" type="radio" name="check" id="radio6">
-						<label class="label" for="radio6"></label>
-						<input type="radio" name="check" id="radio7">
-						<label  class="label" for="radio7"></label>
-						<input type="radio" name="check" id="radio8">
-						<label  class="label" for="radio8"></label>
-					</div>
+					
 				</div>
 			<div class="right_content">
 				<h3 class="what_title">
@@ -421,14 +451,14 @@
 			
 	</div>
 </div>
-<div class="section_partner">
+<div class="section_partner" id="partners">
 	<div class="container">
 		<img src="img/partners_img.png" alt="Partners">
 	</div>
 </div>
 <div class="section_form">
 	<div class="container">
-		<form action="#">
+		<form action="#" id="form">
 			<label for="name">Name*</label>
 			<input id="name" class="form_text" type="text" required="required">
 			<hr class="hr_form">
@@ -451,11 +481,39 @@
 			<p class="web_text">Web: <a target="_blank" href="http://www.designagency.net">www.designagency.net</a></p>
 			<p class="mail_link">E-mail: <a href="mailto:info@designagency.net">info@designagency.net</a></p>
 			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10342.001732086774!2d34.515962349999995!3d49.607169549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1523908879199" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2037.7209420300626!2d34.53463683563945!3d49.59828591924685!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1523913982403" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 </div>
+<footer>
+	<div class="container">
+		<h2  id="follow_us" class="footer_title">
+			FOLLOW US
+		</h2>
+		<div class="social_btns">
+			<a class="print_btn link" href="https://ru.pinterest.com/">
+				<i class="fab fa-pinterest-p"></i>
+			</a>
+			<a class="twitter_btn link" href="https://twitter.com/login?lang=ru">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a class="facebook_btn link" href="https://ru-ru.facebook.com/">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a class="dribble_btn link" href="https://dribbble.com/">
+				<i class="fab fa-dribbble"></i>
+			</a>
+		</div>
+		<p class="credits">
+			Copyright Masum Parvej, All Rights Reserved
+		</p>
+	</div>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script src="js/main.js"></script>
+
 </body>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

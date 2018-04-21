@@ -4,6 +4,10 @@
 			width: 991px;
 		}
 
+		.checkbox_svg {
+			right: 60px;
+		}
+
 		.main_title {
 			font-size: 35px;
 		}
@@ -11,6 +15,81 @@
 		.main_title::after {
 			transform: translate(-65px, 224px);
 		}
+
+		.img_tea {
+			width: 56.5%;
+		}
+
+		.img_documents {
+			width: 41.5%;
+		}
+
+		.img_laptop {
+			width: 56.5%;
+		}
+
+		.img_chair {
+			width: 41.5%;
+		}
+
+		.img_bottle {
+			width: 41.5%;
+		}
+
+		.img_cups {
+			width: 56.5%;
+		}
+
+		.overlay_team {
+			top: 137px;
+			left: 0px;
+			width: 100%;
+			padding: 5px 50px 10px 38px;
+		}
+
+		.overlay_team:before {
+			left: 0px;
+		}
+
+		.right_content {
+			max-width: 475px;
+			padding: 59px 30px 59px 30px;
+		}
+
+		.partner_second {
+			margin: 0px auto;
+			padding-bottom: 17px;
+			max-width: 545px;
+		}
+
+		.second_img {
+			cursor: pointer;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 76px;
+			width: 128px;
+			height: 86px;
+			transition: all ease 0.4s;
+		}
+
+		.second_img:nth-child(3),
+		.second_img:nth-child(6) {
+			margin-right: 0px;
+		}
+
+		.second_img:nth-child(-n+3) {
+			margin-bottom: 17px;
+		}
+
+		form {
+			width: 53%;
+		}
+
+		.contacts {
+			width: 43%;
+		}
+
+
 }
 
 @media screen and (max-width: 995px) {
